@@ -1,4 +1,4 @@
-const a=[10,20,30,40,50,60,70,80,90,100];
+const a=[48,12,66,86,1];
 for(let i=0;i<a.length;i=i+2){
     console.log(a[i]);
 }
