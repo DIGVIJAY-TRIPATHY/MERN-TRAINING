@@ -1,101 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
+  <head>
     <title>dummy portfolio</title>
     <style>
-        .bg{
-            background-image: url(/bgimg.jpg);
-            background-size: cover;        
-            background-position: center;   
-            background-repeat: no-repeat; 
-            height: 400px;
-            width: 100%; 
-        }
-        a{
-            margin: 0 10px;
-             color: black;
-            text-decoration:none
-        }
-        .hiveb{
-            color: white;
-            background-color: orangered;
-            border-radius: 10%;
-        }
-        .new{
-            display: flex;
-            justify-content: center;
-        }
+      .bg {
+        background-image: url(/bgimg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+      }
+      a {
+        margin: 0 10px;
+        color: black;
+        text-decoration: none;
+      }
+      .hirev {
+        color: white;
+        background-color: orangered;
+        border-radius: 10%;
+        cursor: pointer;
+      }
+      .new {
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        padding: 10px 25px;
+        background-color: skyblue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .about {
+        padding: 50px 30px;
+        background-color: white;
+      }
+      .story {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+      }
 
+      .story h2 {
+        margin-top: 0;
+      }
+
+      .story p {
+        line-height: 1.6;
+      }
+
+      .personal {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        vertical-align: top;
+      }
+
+      .personal img {
+        width: 180px;
+        border: 5px solid #ddd;
+      }
+
+      .info {
+        text-align: left;
+        display: inline-block;
+      }
     </style>
-</head>
-<body>
-    <div style="padding: 20px 10px; text-align: right; ">
-        <div style="position: absolute; left: 40px; display: inline-block;">
-            <img src="/wp.jpg" alt="" style="width: 80px;vertical-align: middle; height: 35px;"><span style="font-size: 22px; font-weight: bold; margin-left: 10px;">DIGVIJAY</span>
-        </div>
-        <a href="">About</a>    
-        <a href="">Service</a>    
-        <a href="">Portfolio</a>    
-        <a href="">Team</a>    
-        <a href="">Group</a>    
-        <a href="">Contact</a>    
+  </head>
+  <body>
+    <div style="padding: 20px 10px; text-align: right">
+      <div style="position: absolute; left: 40px; display: inline-block">
+        <img
+          src="/wp.jpg"
+          alt=""
+          style="width: 80px; vertical-align: middle; height: 35px"
+        /><span style="font-size: 22px; font-weight: bold; margin-left: 10px"
+          >DIGVIJAY</span
+        >
+      </div>
+      <a href="">About</a>
+      <a href="">Service</a>
+      <a href="">Portfolio</a>
+      <a href="">Team</a>
+      <a href="">Group</a>
+      <a href="">Contact</a>
     </div>
-    <div >
-        <div class="bg" style="text-align: center;">
-            <br><br><br><br>
-            <h1 id="hi" style="color: aliceblue;">Hi! I'M </h1>
-            <h1 id="john" style="color: skyblue;">JOHN DOE</h1>
-            <h3 style="font-weight: normal; color: aliceblue;">UI/UX Designer from Bhubaneswar, India</h3>
-            <br>
-            <div>
-                <button class="hiveb">Hire me</button>
-            </div>
+    <div>
+      <div class="bg" style="text-align: center">
+        <br /><br /><br /><br />
+        <h1 id="hi" style="color: aliceblue">Hi! I'M</h1>
+        <h1 id="rudra" style="color: skyblue">DIGVIJAY TRIPATHY</h1>
+        <h3 style="font-weight: normal; color: aliceblue">
+          UI/UX Designer from Bhubaneswar, India
+        </h3>
+        <br />
+        <div>
+          <button class="hirev" id="change">Hire me</button>
         </div>
-        
-        
-        <br>
-        <!-- <div  align="center"><button id="change" style="color: rgb(223, 156, 67); background-color: bisque; border-radius: 10px;" >change-color</button></div>
-        <div  align="center"><button id="changen" style="color: rgb(223, 156, 67); background-color: bisque; border-radius: 10px;" >exchange-name</button></div> -->
+      </div>
     </div>
-    
-
-    
-</body>
+    <br />
+    <br />
+    <div class="about">
+      <div class="story">
+        <h2>My Story</h2>
+        <p>
+          Hello, I'm a UI/UX Designer & Front-End Developer from Bhubaneswar,
+          India. I hold a B.Tech degree in Computer Science from NIT
+          Bhubaneswar. I have a passion for creating clean and user-friendly
+          designs.
+        </p>
+        <button class="btn" id="resdown">Download Resume</button>
+      </div>
+      <div class="personal">
+        <img src="/rudra.jpg" alt="" />
+      </div>
+      <div class="info">
+        <h2>Personal Information</h2>
+        <p><b>Digvijay Tripathy</b></p>
+        <p><b>Age:-</b>20 Years</p>
+        <p><b>Email:-</b>tripathydigvijay7377@gmail.com</p>
+        <p><b>Address:-</b>Odisha, India</p>
+      </div>
+    </div>
+  </body>
 </html>
 <script>
-        // let namechanged=false
-        // let colorchanged=false
-        // function changecolor(){
-        //     const c=document.getElementById('hi')
-        //     const d=document.getElementById('john')
-        //     if(!colorchanged){
-        //         c.style.color="skyblue";
-        //         d.style.color="white";
-        //         colorchanged=true
-        //     }
-        //     else{
-        //         c.style.color="white";
-        //         d.style.color="skyblue";
-        //         colorchanged=false
-        //     }
-        // }
-        // function changename(){
-        //     const c=document.getElementById('hi')
-        //     const d=document.getElementById('john')
-        //     if(!namechanged){
-        //         c.innerHTML="HELLO"
-        //         d.innerHTML="Digvijay Tripathy"
-        //         namechanged=true
-        //     }
-        //     else{
-        //         c.innerHTML="Hi! I'M"
-        //         d.innerHTML="JOHN DOE"
-        //         namechanged=false
-        //     }
-            
-        // }
-        // document.querySelector('#change').addEventListener('click',changecolor)
-        // document.querySelector('#changen').addEventListener('click',changename)
-    </script>
-
+  let colorchanged = false;
+  function changecolor() {
+    const c = document.getElementById("hi");
+    const d = document.getElementById("rudra");
+    if (!colorchanged) {
+      c.style.color = "skyblue";
+      d.style.color = "white";
+      colorchanged = true;
+    } else {
+      c.style.color = "white";
+      d.style.color = "skyblue";
+      colorchanged = false;
+    }
+  }
+  function alertmessage() {
+    alert("resume downloading");
+  }
+  document.querySelector("#change").addEventListener("click", changecolor);
+  document.querySelector("#resdown").addEventListener("click", alertmessage);
+</script>
