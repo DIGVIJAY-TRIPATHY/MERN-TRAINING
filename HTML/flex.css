@@ -163,6 +163,7 @@ nav a:hover{
     box-shadow: 0 5px 20px rgba(8, 200, 200, 0.1);
     position: relative;
     flex: 1;
+    transition: transform 0.3s;
 }
 .box:hover{
     transform:translateY(-10px) ;
@@ -191,7 +192,7 @@ nav a:hover{
     line-height: 1.5;
 }
 
-footer{
+.info{
     color: white;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -199,7 +200,7 @@ footer{
     justify-content: space-between;
     text-align: center;
     padding: 0 50px;
-    height: 100px;
+    height: 130px;
     z-index: 1000;
 }
 .foot{
@@ -207,4 +208,101 @@ footer{
 }
 .foot i{
     font-size: 24px;
+}
+.heroine{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.heroine h3{
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+.boxgit3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 100px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+.boxmodel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 25px;
+    gap: 10px;
+    width: 260px;
+    background:linear-gradient(135deg,#667eea 30%,#764ba2);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    transition: transform 0.3s;
+}
+
+#envelope{
+    margin-left: 630px;
+}
+.boxmodel:hover{
+    transform: translateY(-10px);
+}
+
+footer{
+   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.logofooter{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.logofooter i{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(135deg,#667eea 30%,#764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: zoomup 3s ease-in-out infinite;
+}
+@keyframes zoomup{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.rights{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+.angleup a{
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background:linear-gradient(135deg,#667eea 30%,#764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
+.angleup{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
