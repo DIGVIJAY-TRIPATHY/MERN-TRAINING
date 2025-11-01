@@ -12,7 +12,7 @@ header{
     top: 0%;
     left: 0%;
     right: 0%;
-    background: linear-gradient(135deg, rgb(74, 52, 242) 30%,rgb(52, 163, 238) 70%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     height: 70px;
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ nav a:hover{
 .hero{
     position:relative ;
     height: 100vh;
-    background: linear-gradient(120deg ,pink, purple);
+    background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +84,7 @@ nav a:hover{
 
 }
 .btn{
-    background: linear-gradient(to right,rgb(165, 242, 148),lightblue);
+    background: linear-gradient(135deg, #FEC163 0%, #DE4313 100%);
     color: white;
     border: none;
     padding: 15px 40px;
@@ -106,16 +106,32 @@ nav a:hover{
   font-size: 40px;
   color: rgba(255, 255, 255, 0.4);
   z-index: 5;
+  animation: float 3s ease-in-out infinite;
 }
 .floating-icons-1 {
   top: 25%;
   left: 10%;
+  animation-delay: 4ms;
 }
 .floating-icons-2 {
-  bottom: 30%;
-  right: 20%;
+    bottom: 30%;
+    right: 20%;
+    animation-delay: 0ms;
 }
 .floating-icons-3 {
-  bottom: 15%;
-  left: 20%;
+    bottom: 15%;
+    left: 20%;
+    animation-delay: 2ms;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
 }
