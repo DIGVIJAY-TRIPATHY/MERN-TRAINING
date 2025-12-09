@@ -3,112 +3,136 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Modern Web Design</title>
     <link rel="stylesheet" href="new.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar">
         <div class="logo">ModernWeb</div>
-        <ul class="nav-list" id="navlinks">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Services">Services</a></li>
-          <li><a href="#Gallery">Gallery</a></li>
-          <li><a href="Contact">Contact</a></li>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <button class="menu-toggle" id="menutoggle">≣</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
       </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-content">
         <h1 class="hero-title">Welcome to Modern Design</h1>
-        <p class="hero-subtitle">Creating Beautiful Digital Experience</p>
-        <button class="start">Get Started</button>
+        <p class="hero-subtitle">Creating Beautiful Digital Experiences</p>
+        <button class="cta-button" id="ctaButton">Get Started</button>
       </div>
+      <div class="hero-bg"></div>
     </section>
-    <section class="about-us-full">
-      <div class="about-us">
-        <h1>About Us</h1>
-        <div class="hr"></div>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione,
-          expedita? Enim ut eligendi unde vero praesentium tempora rerum
-        </p>
-        <p>
-          inventore ullam! Omnis alias nisi consectetur sunt natus delectus
-          magnam temporibus repudiandae!
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-text">
+          We are passionate about creating stunning web experiences that
+          captivate and engage. Our team combines creativity with technical
+          expertise to deliver exceptional results.
         </p>
       </div>
     </section>
 
-    <section class="features">
+    <section id="services" class="services">
       <div class="container">
-        <div class="our">Our Services</div>
-        <div class="hr"></div>
-        <br /><br />
-        <div class="classwrapper">
-          <button class="scroll-btn left"><</button>
-          <div class="card">
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">🎨</h3>
-              </div>
+        <h2 class="section-title">Our Services</h2>
+        <div class="cards-wrapper">
+          <button class="scroll-btn left" id="scrollLeft">‹</button>
+          <div class="cards-container" id="cardsContainer">
+            <div class="card">
+              <div class="card-icon">🎨</div>
               <h3>Web Design</h3>
               <p>Beautiful and responsive designs that work on all devices</p>
             </div>
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">💻</h3>
-              </div>
+            <div class="card">
+              <div class="card-icon">💻</div>
               <h3>Development</h3>
-              <p>Clean, efficient code and brings design to life</p>
+              <p>Clean, efficient code that brings designs to life</p>
             </div>
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">🚀</h3>
-              </div>
-              <h3>optimization</h3>
+            <div class="card">
+              <div class="card-icon">🚀</div>
+              <h3>Optimization</h3>
               <p>Fast loading times and smooth performance</p>
             </div>
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">📱</h3>
-              </div>
-              <h3>Mobile</h3>
-              <p>optimized experience</p>
+            <div class="card">
+              <div class="card-icon">📱</div>
+              <h3>Mobile First</h3>
+              <p>Optimized experiences for mobile users</p>
             </div>
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">📱</h3>
-              </div>
-              <h3>Mobile</h3>
-              <p>optimized experience</p>
+            <div class="card">
+              <div class="card-icon">🔒</div>
+              <h3>Security</h3>
+              <p>Secure and reliable web solutions</p>
             </div>
-            <div class="box">
-              <div class="i-box">
-                <h3 class="emoji">📱</h3>
-              </div>
-              <h3>Mobile</h3>
-              <p>optimized experience</p>
+            <div class="card">
+              <div class="card-icon">💡</div>
+              <h3>Consulting</h3>
+              <p>Expert advice for your digital strategy</p>
             </div>
           </div>
-          <button class="scroll-btn right">></button>
+          <button class="scroll-btn right" id="scrollRight">›</button>
         </div>
       </div>
     </section>
 
-    <section class="ourwork">
-      <div class="work">
-        <h1>Our Work</h1>
-        <div class="hr"></div>
-      </div>
-      <div class="allcards">
-        <div class="alpha">
-          <h1>Project Alpha</h1>
-          <p>E-commerce platform</p>
+    <section class="gallary">
+      <div class="container">
+        <h2 class="section-title">Our Work</h2>
+        <div class="carousel">
+          <button class="carousel-btn prev"><</button>
+          <div class="carousel-container">
+            <div class="carousel-slide active">
+              <div
+                class="slide-content"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
+              >
+                <h3>project alpha</h3>
+                <p>E-commerce platform</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div
+                class="slide-content"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
+              >
+                <h3>project beta</h3>
+                <p>E-commerce platform</p>
+              </div>
+              <div
+                class="slide-content"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
+              >
+                <h3>project gamma</h3>
+                <p>E-commerce platform</p>
+              </div>
+              <div
+                class="slide-content"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
+              >
+                <h3>project delta</h3>
+                <p>E-commerce platform</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-btn next">></button>
         </div>
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </section>
   </body>

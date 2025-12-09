@@ -1,9 +1,11 @@
+const ctaButton=document.querySelector('.cta-button')
+ctaButton.addEventListener('click' ,function(){
+    alert("Welcome to my website");
+})
 
-const menuToggle = document.getElementById('menutoggle');
-const navlinks = document.getElementById('navlinks');
-
-menuToggle.addEventListener('click', function() {
-    navlinks.classList.toggle('active');
-});
-
-
+// carousel dots
+// card slide
+// responsive changes
+// closing the hamburger menu
+// opening menu
+// smooth navigation
