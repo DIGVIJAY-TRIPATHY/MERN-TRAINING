@@ -1,4 +1,68 @@
-.hello{
-    background: black;
-    color: white;
+.header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    .name{
+        font-size: 24px;
+        font-weight: bold;
+        color: aqua;
+    }
+
+    .description{
+        font-size: 24px;
+        color: lightgray;
+
+        .ul{
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: lightgray;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+        }
+        a:hover{
+            color: white;
+            transition: 0.3s;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 15px 30px rgba(99, 102, 241, 0.5);
+        }
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        button{
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
 }
