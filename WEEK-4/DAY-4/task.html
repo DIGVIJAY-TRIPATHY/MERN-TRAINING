@@ -178,7 +178,6 @@
       </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section class="portfolio" id="portfolio">
       <div class="section-header">
         <h2 class="section-title">Our Portfolio</h2>
@@ -224,7 +223,6 @@
       </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials" id="about">
       <div class="testimonials-container">
         <div class="section-header">
@@ -287,7 +285,6 @@
       </div>
     </section>
 
-    <!-- Achievements / Stats Section -->
 <section class="stats">
   <div class="stats-container">
     <div class="section-header">
@@ -344,7 +341,6 @@
     <footer class="footer">
   <div class="footer-wrapper">
 
-    <!-- Brand Section -->
     <div class="footer-brand">
       <div class="footer-logo">
         <i class="fas fa-gem"></i>
@@ -362,7 +358,6 @@
       </div>
     </div>
 
-    <!-- Links -->
     <div class="footer-column">
       <h3>Explore</h3>
       <ul>
@@ -383,7 +378,6 @@
       </ul>
     </div>
 
-    <!-- Contact -->
     <div class="footer-column" >
       <h3 >Contact</h3>
       <ul class="contact-list">
@@ -416,13 +410,11 @@
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-links");
 
-  // Toggle hamburger menu
   hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     hamburger.classList.toggle("open");
   });
 
-  // Close menu when clicking any link
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
