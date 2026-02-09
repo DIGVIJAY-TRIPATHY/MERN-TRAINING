@@ -2,6 +2,25 @@ import {useState} from 'react'
 import './App.css'
 
 function App() {
+
+  const [task , setTask] = useState("");
+  const [tasks, setTasks] = useState([]);
+
+  //Add
+  const addTask =()=>{
+    if(task==="") return;
+    setTasks([...tasks, task])
+    setTask("")
+  }
+
+  //Delete
+  const deleteTask =(index)=>{
+    const newTasks = tasks.filter((_, i) => i !== index); //to be checked for filter
+    setTasks(newTasks);
+  }
+
+
+  /*
   const [input, setInput] = useState("");
 
   const handleClick = (value)=>{
@@ -22,41 +41,57 @@ function App() {
     }catch{
       setInput("error");
     }
-  };
+  };*/
 
   return (
-    <div className="calculator">
-      <div className="display">
-        {input || "0"}
-      </div>
+    // <div className="calculator">
+    //   <div className="display">
+    //     {input || "0"}
+    //   </div>
 
-      <div className="buttons">
-        <button classname="operator" onClick={clearAll}>AC</button>
-        <button classname="operator" onClick={deleteLast}>Del</button>
-        <button classname="operator" onClick={()=>handleClick("%")}>Mod</button>
-        <button classname="operator" onClick={()=>handleClick("/")}>Div</button>
+    //   <div className="buttons">
+    //     <button classname="operator" onClick={clearAll}>AC</button>
+    //     <button classname="operator" onClick={deleteLast}>Del</button>
+    //     <button classname="operator" onClick={()=>handleClick("%")}>Mod</button>
+    //     <button classname="operator" onClick={()=>handleClick("/")}>Div</button>
 
-        <button onClick={()=>handleClick("7")}>7</button>
-        <button onClick={()=>handleClick("8")}>8</button>
-        <button onClick={()=>handleClick("9")}>9</button>
-        <button classname="operator" onClick={()=>handleClick("*")}>Mul</button>
+    //     <button onClick={()=>handleClick("7")}>7</button>
+    //     <button onClick={()=>handleClick("8")}>8</button>
+    //     <button onClick={()=>handleClick("9")}>9</button>
+    //     <button classname="operator" onClick={()=>handleClick("*")}>Mul</button>
 
-        <button onClick={()=>handleClick("4")}>4</button>
-        <button onClick={()=>handleClick("5")}>5</button>
-        <button onClick={()=>handleClick("6")}>6</button>
-        <button classname="operator" onClick={()=>handleClick("-")}>Sub</button>
+    //     <button onClick={()=>handleClick("4")}>4</button>
+    //     <button onClick={()=>handleClick("5")}>5</button>
+    //     <button onClick={()=>handleClick("6")}>6</button>
+    //     <button classname="operator" onClick={()=>handleClick("-")}>Sub</button>
 
-        <button onClick={()=>handleClick("1")}>1</button>
-        <button onClick={()=>handleClick("2")}>2</button>
-        <button onClick={()=>handleClick("3")}>3</button>
-        <button classname="operator" onClick={()=>handleClick("+")}>Add</button>
+    //     <button onClick={()=>handleClick("1")}>1</button>
+    //     <button onClick={()=>handleClick("2")}>2</button>
+    //     <button onClick={()=>handleClick("3")}>3</button>
+    //     <button classname="operator" onClick={()=>handleClick("+")}>Add</button>
 
-        <button onClick={()=>handleClick("0")}>0</button>
-        <button onClick={()=>handleClick("00")}>00</button>
-        <button onClick={()=>handleClick(".")}>.</button>
-        <button onClick={()=>{calculateResult}}>=</button>
-      </div>
+    //     <button onClick={()=>handleClick("0")}>0</button>
+    //     <button onClick={()=>handleClick("00")}>00</button>
+    //     <button onClick={()=>handleClick(".")}>.</button>
+    //     <button onClick={()=>{calculateResult}}>=</button>
+    //   </div>
+    // </div>
+
+    <div className="app">
+      <h1>TODO APP</h1>
+      <input type="text" placeholder='Enter task' value={task} onChange={(e)=>setTask(e.target.value)} />
+      <button onClick={addTask}>Add Task</button>
+      <ul>
+        {tasks.map((item, index)=>(
+          <li key={index}>
+            {item}
+            <button onClick={()=>deleteTask(index)} className='xxx'>×</button>
+          </li>
+        ))}
+      </ul>
     </div>
+
+
   )
 }
 
