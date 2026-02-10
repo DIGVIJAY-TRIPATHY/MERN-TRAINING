@@ -77,19 +77,7 @@ function App() {
     //   </div>
     // </div>
 
-    <div className="app">
-      <h1>TODO APP</h1>
-      <input type="text" placeholder='Enter task' value={task} onChange={(e)=>setTask(e.target.value)} />
-      <button onClick={addTask}>Add Task</button>
-      <ul>
-        {tasks.map((item, index)=>(
-          <li key={index}>
-            {item}
-            <button onClick={()=>deleteTask(index)} className='xxx'>×</button>
-          </li>
-        ))}
-      </ul>
-    </div>
+    
 
 
   )
