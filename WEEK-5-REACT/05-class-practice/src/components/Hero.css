@@ -1,0 +1,24 @@
+.hhh{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero{
+    width: 450px;;
+}
+
+
+.nd{
+    display: flex;
+    gap: 15px;
+}
+button{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 100px;
+}

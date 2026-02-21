@@ -1,0 +1,53 @@
+.hhh {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;}
+.logo {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.7rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+.menu a:hover {
+  color: #667eea;
+}
+
+.menu a::after {
+  transition: width 0.3s ease;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+}
